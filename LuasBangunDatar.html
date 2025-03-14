@@ -1,0 +1,73 @@
+<!DOCTYPE html> 
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Pertemuan 1 - Pemrograman Javascript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background: #dffff7;
+        }
+        h2 {
+            color: #333;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between; 
+            align-items: stretch; 
+            width: 100%;
+        }
+        .box {
+            width: 33.33%;
+            text-align: left;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(3, 96, 65, 0.588);
+            margin: 5px;
+            height: 100%; 
+        }
+    </style>
+</head>
+<body>
+    <h2>Kalkulator Luas Bangun Datar</h2>
+    <div class="container">
+        <script>
+            // Variabel statis menggunakan const
+            const P = 24, L = 8, S = 12, A = 8, T = 6;
+
+            // Menghitung luas
+            const luasPersegiPanjang = P * L;
+            const luasBujurSangkar = S * S;
+            const luasSegitiga = (A * T) / 2;
+
+            // Menampilkan hasil dengan document.write
+            document.write('<div class="box">');
+            document.write('<h3 class="result">Luas Persegi Panjang</h3>');
+            document.write('<p>Panjang = ' + P + '</p>');
+            document.write('<p>Lebar = ' + L + '</p>');
+            document.write('<p>Rumus = P × L</p>');
+            document.write('<p>Hasil = ' + luasPersegiPanjang + ' cm²</p>');
+            document.write('</div>');
+
+            document.write('<div class="box">');
+            document.write('<h3 class="result">Luas Bujur Sangkar</h3>');
+            document.write('<p>Sisi = ' + S + '</p>');
+            document.write('<p>Rumus = S × S</p>');
+            document.write('<p>Hasil = ' + luasBujurSangkar + ' cm²</p>');
+            document.write('</div>');
+
+            document.write('<div class="box">');
+            document.write('<h3 class="result">Luas Segitiga</h3>');
+            document.write('<p>Alas = ' + A + '</p>');
+            document.write('<p>Tinggi = ' + T + '</p>');
+            document.write('<p>Rumus = (A × T) / 2</p>');
+            document.write('<p>Hasil = ' + luasSegitiga + ' cm²</p>');
+            document.write('</div>');
+        </script>
+    </div>
+</body>
+</html>
